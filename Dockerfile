@@ -8,8 +8,8 @@ RUN yum install -y java-11 \
                    unzip && \
                    yum clean all && \
                    cd /opt/ && \
-		           curl -L -O ${MIRROR_LINK} && \
-		           tar -xzf ${JMETER_VERSION}.tgz && rm -rf ${JMETER_VERSION}.tgz
+		   curl -L -O ${MIRROR_LINK} && \
+		   tar -xzf ${JMETER_VERSION}.tgz && rm -rf ${JMETER_VERSION}.tgz
 
 ADD plugins/ /opt/${JMETER_VERSION}/lib/
 
